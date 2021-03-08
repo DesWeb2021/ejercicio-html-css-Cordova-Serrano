@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO DE Repaso</title>
+
+    <style>
+        @font-face {
+            font-family: "Orbitron";
+            src: url("Orbitron-Bold.ttf");
+
+            font-family: "Documenta";
+            src: url("Documenta.otf");
+        }
+        
+        h1 {
+            font-size: 75px; font-family: "Documenta";
+            text-align: center;  
+        }
+
+        h2 {
+            font-family: "Orbitron";
+        }
+        #botones {
+            position: sticky; top: 250px;
+            background-color:#008081;
+            padding: 5px;
+            text-align: right;
+        }
+        #Navegacion {
+            position: relative;
+            background-color: #008081;
+
+            font-size: 18px;
+            color: white;
+
+            border: solid 1px white;
+            padding: 10px;
+        }
+        p {
+            text-align: justify;
+            border: solid black 1px;
+            padding: 5px;
+            border-top: 10px;
+            border-left: 10px;
+            border-right: 10px;
+        }
+        #Ejtablas {
+            width: 300px; height: 150px;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #botonImg {
+            position: relative;
+            background-color: #008081;
+
+            font-size: 18px;
+            color: white;
+
+            border-radius: 10px;
+            margin: 10px;
+        }
+        #cambiarImg {
+            position: relative;
+            color: black;
+        }
+    </style>
+
+    <script>
+        function cambiarImagen()
+        {
+            document.getElementById("edificio").src="logo2.jpg";
+        }
+    </script>
+</head>
+
+<body>
+
+  <img src="UASLP.png" alt="" width="110" height="120">
+  <img src="ING.png" alt="" width="110" height="120" style="float: right;">
+
+  <h1>Ejercicio de Repaso</h1>
+  <h2 style="text-align: center;">Córdova Serrano Eduardo Javier</h2>
+
+  <div id="botones">
+    <a href="#EjemploTexto">
+        <button id="Navegacion">Texto</button>
+    </a>
+    <a href="#EjemploTablas">
+        <button id="Navegacion">Tablas</button>
+    </a>  
+    <a href="#EjemploLinks">
+        <button id="Navegacion">Imágenes</button>
+    </a>
+  </div>
+
+  <div>
+      <h2>Ejemplo de texto</h2>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laudantium corrupti sapiente nam quia voluptate eaque sed ullam, et ratione quibusdam, illo ad! Reprehenderit sed dolore aperiam, quisquam voluptatem nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis numquam soluta mollitia similique incidunt odit error obcaecati architecto sit vitae molestiae itaque corrupti laudantium, deleniti sunt voluptate aperiam eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates exercitationem cum minima assumenda, explicabo temporibus dolor voluptate odit qui doloribus commodi excepturi, asperiores fuga? Earum nobis ab esse soluta aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quisquam soluta dolorum ipsum architecto laboriosam saepe sunt possimus vel, vitae nisi officiis molestias obcaecati quasi hic nesciunt aut. Ut, maiores.</p>
+  </div>
+
+  <div>
+    <h2 id="EjemploTexto">Ejemplo de tablas</h2>
+    <br>
+    <table id="Ejtablas" border="1">
+        <thead>
+            <tr>
+                <th>Frameworks</th>
+                <th>Front End</th>
+                <th>Back End</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>Bootstrap</th>
+            <td>X</td>
+            <td></td>
+            
+            
+        </tr>
+        <tr>
+            <th>jQuery</th>
+            <td>X</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>NodeJs</th>
+            <td colspan="2">X</td>
+        </tr>
+    </table>
+  </div>
+
+  <div id="EjemploLinks">
+    <h2 id="EjemploTexto">Ejemplo de Links</h2>
+    <button id="botonImg" onclick="cambiarImagen();">Click aquí para cambiar la imagen</button>
+    <p><img src="edificio.jpg" alt="" id="edificio"></p>
+  </div>
+</body>
+</html>
